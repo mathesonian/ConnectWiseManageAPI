@@ -9,6 +9,6 @@ function New-CWMMarketingGroupContact {
         [string]$note
     )
 
-    $Endpoint = "/marketing/groups/$($parentId)/contacts"
+    $Endpoint = "/marketing/groups/$($parentId)/contacts/$(id)"
     Invoke-CWMNewMaster -Arguments $PsBoundParameters -Endpoint $Endpoint
 }
