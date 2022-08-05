@@ -8,6 +8,6 @@ function Remove-CWMMarketingGroup {
         [int]$id
     )
 
-    $Endpoint = "/company/contacts/$($id)"
+    $Endpoint = "/marketing/groups/$($id)"
     Invoke-CWMRemoveMaster -Endpoint $Endpoint
 }
