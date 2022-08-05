@@ -9,5 +9,5 @@ function Remove-CWMMarketingGroupContact {
     )
 
     $Endpoint = "/marketing/groups/$($parentId)/contacts/$($id)"
-    Invoke-CWMNewMaster -Arguments $PsBoundParameters -Endpoint $Endpoint
+    Invoke-CWMRemoveMaster -Arguments $PsBoundParameters -Endpoint $Endpoint
 }
