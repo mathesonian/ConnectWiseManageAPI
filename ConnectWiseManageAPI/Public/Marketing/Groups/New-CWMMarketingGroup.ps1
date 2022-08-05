@@ -10,5 +10,5 @@ function New-CWMMarketingGroup {
     )
 
     $Endpoint = '/marketing/groups'
-    Invoke-CWMRemoveMaster -Arguments $PsBoundParameters -Endpoint $Endpoint
+    Invoke-CWMNewMaster -Arguments $PsBoundParameters -Endpoint $Endpoint
 }
