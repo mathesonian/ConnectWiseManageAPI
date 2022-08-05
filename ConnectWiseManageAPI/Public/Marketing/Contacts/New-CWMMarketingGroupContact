@@ -1,0 +1,14 @@
+function New-CWMMarketingGroupContact {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $true)]
+        [Alias('groupId')]
+        [int]$parentId,
+        [Alias('contactId')]
+        [int]$id,
+        [string]$note
+    )
+
+    $Endpoint = "/marketing/groups/$($parentId)/contacts"
+    Invoke-CWMNewMaster -Arguments $PsBoundParameters -Endpoint $Endpoint
+}
