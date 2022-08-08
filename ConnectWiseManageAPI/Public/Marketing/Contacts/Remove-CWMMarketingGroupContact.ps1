@@ -2,7 +2,7 @@ function Remove-CWMMarketingGroupContact {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)]
-        [int]$id
+        [int]$id,
         [Alias('contactId')]
         [int]$parentId,
         [Alias('groupId')]
